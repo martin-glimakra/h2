@@ -1,0 +1,20 @@
+<html>
+<body>
+    <ul id="listan">
+
+    </ul>
+    <button onclick="nytt()">lägg till</button>
+
+    <script>
+        function nytt() {
+            let listItem = document.createElement("li");
+            listItem.id = "ett id"
+
+            document.getElementById("listan").appendChild(listItem)
+            let paragrafen = document.createElement("p");
+            paragrafen.innerText = "paragraftext"
+            document.getElementById("ett id").appendChild(paragrafen)
+        }
+    </script>
+</body>
+</html>
